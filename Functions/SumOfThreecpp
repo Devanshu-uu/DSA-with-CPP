@@ -1,0 +1,26 @@
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+void sum(int a,int b,int c){
+    cout<<a+b+c<<endl;
+}
+
+
+
+int main() {
+    sum(1,2,3);
+    
+    
+
+
+
+}
+ 
+
+    
+    
+    
