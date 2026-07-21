@@ -7,6 +7,12 @@ using namespace std;
 
 void fun(){
     cout<<"Hi girl"<<endl;
+    
+}
+
+void anu(){
+    cout<<"Hi anu"<<endl;
+    arjun();
 }
 
 void arjun(){
@@ -14,10 +20,7 @@ void arjun(){
     fun();
 }
 
-void anu(){
-    cout<<"Hi anu"<<endl;
-    arjun();
-}
+
 
 
 
