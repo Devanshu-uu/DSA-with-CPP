@@ -1,19 +1,25 @@
-#include <iostream>
-#include <vector>
-using namespace std;
-int main() {
-    vector<int> arr={10,20,30,40,50,60,70};
-    int temp;
-    for (int i=0;i<arr.size();i++){
-        temp=arr[i];
-        arr[i]= arr[(arr.size()-1)-i];
-        arr[(arr.size()-1)-i]=temp;
+Time Limit Exceeded
+Last Executed Input
+Open Testcase
+nums =
+[1,2,3,4,5,6,7]
+k =
+3class Solution {
+    void reverse(vector<int> &arr ,int i,int j){
+        while(i<j){
+            int temp=arr[i];
+            arr[i]=arr[j];
+            arr[j]=temp;
 
+        }
+    }
+public:
+    void rotate(vector<int>& arr, int k) {
+        k=k%2;
+        int n=arr.size();
+        reverse(arr,0,n-1);
+        reverse(arr,0,k-1);
+        reverse(arr,k,n-1);
 
     }
-
-    for (int elem:arr){
-        cout<<elem<<" ";
-    }
-
-}
+};
