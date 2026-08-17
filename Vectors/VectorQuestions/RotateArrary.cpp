@@ -1,10 +1,4 @@
-Time Limit Exceeded
-Last Executed Input
-Open Testcase
-nums =
-[1,2,3,4,5,6,7]
-k =
-3class Solution {
+class Solution {
     void reverse(vector<int> &arr ,int i,int j){
         while(i<j){
             int temp=arr[i];
