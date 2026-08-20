@@ -7,25 +7,42 @@ int main() {
     int b[]={30,50,60,80};
     int m=size(a),n=size(b);
     int c[m+n];
-    int i=0,j=0,k=0;
+    // int i=0,j=0,k=0;
 
-    while(i<m && j<n ){
-        if(a[i]<b[j]) 
-        c[k++]=a[i++];
-        else 
-        c[k++]=b[j++];
+    // while(i<m && j<n ){
+    //     if(a[i]<b[j]) 
+    //     c[k++]=a[i++];
+    //     else 
+    //     c[k++]=b[j++];
            
         
+    // }
+
+    // while(i<m) 
+    // c[k++]=a[i++];
+    // while(j<n)
+    // c[k++]=b[j++];
+
+// Another method
+    
+    int i=m-1,j=n-1,k=m+n-1;
+    while(i>=0 &&j>=0){
+        if(a[i]>b[j]) c[k--]=a[i--];
+        else c[k--]=b[j--];
     }
 
-    while(i<m) 
-    c[k++]=a[i++];
-    while(j<n)
-    c[k++]=b[j++];
+    while(i>=0){
+        c[k--]=a[i--];
+    }
+    while(j>=0){
+        c[k--]=b[j--];
+    }
 
 
+    
     for(int i=0;i<m+n;i++){
         cout<<c[i]<<" ";
     }
+
     
 }
