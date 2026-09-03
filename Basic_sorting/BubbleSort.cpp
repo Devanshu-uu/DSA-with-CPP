@@ -11,7 +11,7 @@ int main() {
     int n=arr.size();
     for(int j=0;j<n-1;j++){
         int swaps=0;
-        for(int i=0;i<n-1;i++){
+        for(int i=0;i<n-1-j;i++){
             if(arr[i]>arr[i+1]) {
                 swap(arr[i],arr[i+1]);
                 swaps++;
