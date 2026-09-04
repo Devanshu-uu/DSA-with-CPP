@@ -8,13 +8,12 @@ int main() {
     int n=arr.size();
     
     for(int i=0;i<n-1;i++){
-        int mn=arr[i];
         int index=i;
         for(int j=i;j<n ;j++)
         {
-            if(arr[j]<mn){
+            if(arr[j]<arr[index]){
             index=j;
-            mn=arr[j];
+            
 
         } 
         
